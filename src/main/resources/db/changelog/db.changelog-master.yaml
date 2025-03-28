@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/scripts/01-CREATE-CAR-AND-ENGINE-TABLES.sql
+  - include:
+      file: db/changelog/scripts/02-CREATE-PERSON-AND-GAME-AND-COMPANY-TABLES.sql
+  - include:
+      file: db/changelog/scripts/03-CREATE-USERS-AND-ROLES.sql
+  - include:
+      file: db/changelog/scripts/04-ADD-ROLES.sql
+  - include:
+      file: db/changelog/scripts/05-ADD-BALANCEINCENTS-AND-PRICEINCENTS-COLUMNS.sql
+  - include:
+      file: db/changelog/scripts/06-CREATE-USER-CAR-RELATIONSHIP-TABLE.sql
+  - include:
+      file: db/changelog/scripts/07-ADD-BOUGHTFOR-AND-SELLINGFOR-COLUMNS.sql
+  - include:
+      file: db/changelog/scripts/08-FIX-FK-USER-CAR-CAR.sql
+  - include:
+      file: db/changelog/scripts/09-FIX-USER-CAR-PK.sql
+  - include:
+      file: db/changelog/scripts/10-ADD-IMAGEID-TO-CAR.sql

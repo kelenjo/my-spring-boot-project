@@ -1,0 +1,30 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    url: ${JAVA_COURSE_DB_URL}
+    username: ${JAVA_COURSE_DB_USER}
+    password: ${JAVA_COURSE_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yaml
+    default-schema: cars
+    liquibase-schema: cars
+
+jwt:
+  secret-key: ${JAVA_COURSE_JWT_KEY}
+
+cloudinary:
+  cloud-name: ${CLOUDINARY_CLOUD_NAME}
+  api-key: ${CLOUDINARY_API_KEY}
+  api-secret: ${CLOUDINARY_API_SECRET}
+
+logging:
+  level:
+    ge.giorgi.springbootdemo.car.security.JwtFilter: DEBUG
+
+
+
+
+

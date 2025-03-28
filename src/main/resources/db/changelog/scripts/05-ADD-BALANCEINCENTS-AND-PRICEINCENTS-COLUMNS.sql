@@ -1,0 +1,3 @@
+ALTER TABLE cars.app_user ADD COLUMN balanceincents BIGINT NOT NULL DEFAULT 0;
+
+ALTER TABLE cars.car ADD COLUMN priceincents BIGINT NOT NULL DEFAULT 0;
